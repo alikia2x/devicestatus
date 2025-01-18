@@ -313,7 +313,9 @@ const packageNameMap = {
     "org.cef.cefsimple.helper": "cef_server Helper",
     "org.cef.cefsimple.helper.plugin": "cef_server Helper (Plugin)",
     "org.cef.cefsimple.helper.renderer": "cef_server Helper (Renderer)",
-    "org.jcef.jcef.helper": "jcef Helper"
+    "org.jcef.jcef.helper": "jcef Helper",
+    "com.apple.finder": "Finder",
+    "com.apple.ActivityMonitor": "Activity Monitor",
 }
 
 export default function getAppName(packageName: string) {
