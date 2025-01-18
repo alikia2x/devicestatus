@@ -23,7 +23,9 @@ export const PUT: RequestHandler = async ({ url, params, request }) => {
 		packageNameOpening: isCloseAction ? null : deviceStatus.packageName,
 		lastUpdateAt: Date.now(),
 		batteryLevel: deviceStatus.batteryLevel,
-		isCharging: deviceStatus.isCharging
+		isCharging: deviceStatus.isCharging,
+		windowTitle: deviceStatus.windowTitle,
+		url: deviceStatus.url,
 	};
 
 	// Update the device information in Redis

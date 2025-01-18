@@ -7,6 +7,8 @@ export interface DeviceStatus {
 	lastUpdateAt: number;
 	batteryLevel: number | null;
 	isCharging: boolean | null;
+	windowTitle: string | null;
+	url: string | null;
 }
 
 export interface DeviceStatusReceived {
@@ -15,6 +17,8 @@ export interface DeviceStatusReceived {
 	batteryLevel: number | null;
 	isCharging: boolean | null;
 	expiresInMinutes: number;
+	windowTitle: string | null;
+	url: string | null;
 }
 
 export interface DeviceData {
