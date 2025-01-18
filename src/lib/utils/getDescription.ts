@@ -96,7 +96,7 @@ function getURLMatch(url: string) {
 			}
 		}
 	}
-	return "在摸鱼";
+	return null;
 }
 
 export default function getDescription(status: DeviceStatus) {
