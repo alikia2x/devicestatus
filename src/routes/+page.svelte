@@ -17,7 +17,7 @@
 	<div class="relative mt-8 w-full">
 		<h1 class="text-4xl font-bold mb-10">我的设备状态</h1>
 
-		<div class="flex flex-col">
+		<div class="flex flex-col gap-8">
 			{#each data.devices as device (device.name)}
 				{#if device}
 					<DeviceStatusCard {device} {dayjs} />
