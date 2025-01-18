@@ -31,7 +31,10 @@ export const PUT: RequestHandler = async ({ url, params, request }) => {
 	// Update the device information in Redis
 	await redis.set(`device:${deviceName}`, JSON.stringify(deviceInfo));
 
-	// Optionally, set an expiration time for the device info
+	if (!deviceStatus.expiresInMinutes) {
+		throw error(400, "ExpiresInMinutes is required");
+	}
+
 	const expiresIn = deviceStatus.expiresInMinutes * 60; // Convert minutes to seconds
 	await redis.expire(`device:${deviceName}`, expiresIn);
 

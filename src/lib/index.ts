@@ -3,22 +3,22 @@ export * from './server/index';
 export type actionType = "open" | "close" | null;
 
 export interface DeviceStatus {
-	packageNameOpening: string | null;
+	packageNameOpening: string | null | undefined;
 	lastUpdateAt: number;
-	batteryLevel: number | null;
-	isCharging: boolean | null;
-	windowTitle: string | null;
-	url: string | null;
+	batteryLevel: number | undefined;
+	isCharging: boolean | undefined;
+	windowTitle: string | undefined;
+	url: string | undefined;
 }
 
 export interface DeviceStatusReceived {
 	action: actionType;
-	packageName: string | null;
-	batteryLevel: number | null;
-	isCharging: boolean | null;
+	packageName: string | null | undefined;
+	batteryLevel: number | undefined;
+	isCharging: boolean | undefined;
 	expiresInMinutes: number;
-	windowTitle: string | null;
-	url: string | null;
+	windowTitle: string | undefined;
+	url: string | undefined;
 }
 
 export interface DeviceData {
