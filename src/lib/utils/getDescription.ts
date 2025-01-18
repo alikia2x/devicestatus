@@ -22,8 +22,6 @@ const packagenameMap = {
 	"com.apple.iWork.Numbers": "在工作",
 	"org.mozilla.firefoxdeveloperedition": "在调试",
 	"com.apple.ActivityMonitor": "在和邪恶进程斗智斗勇",
-	"company.thebrowser.Browser": "查资料",
-	"com.google.Chrome": "查资料",
 };
 
 const urlMap = {
@@ -98,14 +96,14 @@ function getURLMatch(url: string) {
 			}
 		}
 	}
-	return null;
+	return "在摸鱼";
 }
 
 export default function getDescription(status: DeviceStatus) {
 	const packageName = status.packageNameOpening;
 	const batteryLevel = status.batteryLevel;
 	const urlMatch = getURLMatch(status.url || "");
-	if (urlMatch) return urlMatch;``
+	if (urlMatch) return urlMatch;
 	if (batteryLevel && batteryLevel < 0.2 && !status.isCharging)
 		return "该去找充电器了";
 	if (!packageName) return "在摸鱼";
