@@ -21,7 +21,7 @@
 	}
 </script>
 
-<div class="bg-zinc-200 dark:bg-zinc-900 rounded-lg shadow p-4">
+<div class="bg-zinc-200 dark:bg-zinc-900 rounded-lg shadow p-4 max-w-[30rem]">
 	<h2 class="text-lg font-semibold mb-2">{device.name}</h2>
 	<div class="space-y-1 text-sm">
 		{#if device.status.packageNameOpening}
@@ -43,7 +43,7 @@
 			<span>{dayjs(device.status.lastUpdateAt).fromNow()}</span>
 		</div>
         <div class="flex justify-between">
-			<span>从使用情况来看，大概率{getDescription(device.status.packageNameOpening)}</span>
+			<span>从使用情况来看，大概率{getDescription(device.status)}</span>
 		</div>
 	</div>
 </div>
