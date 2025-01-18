@@ -2,24 +2,7 @@ import { error } from "@sveltejs/kit";
 import type { RequestHandler } from "./$types";
 import { redis } from "$lib";
 import { AUTH_TOKEN } from "$env/static/private";
-
-interface DeviceStatus {
-	packageNameOpening: string | null;
-	lastUpdateAt: number;
-	batteryLevel: number | null;
-	isCharging: boolean | null;
-}
-
-interface DeviceStatusReceived {
-	action: actionType;
-	packageName: string | null;
-	batteryLevel: number | null;
-	isCharging: boolean | null;
-	expiresInMinutes: number;
-}
-
-type actionType = "open" | "close" | null;
-
+import type { DeviceStatusReceived, DeviceStatus } from "$lib/index";
 export const PUT: RequestHandler = async ({ url, params, request }) => {
 	const deviceName = params.name;
 	// bearer token
