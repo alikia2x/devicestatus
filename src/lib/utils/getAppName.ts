@@ -21,6 +21,7 @@ const packageNameMap = {
     "com.apple.Music": "音乐",
     "com.baidu.homework": "作业帮",
     "com.baidu.netdisk": "BaiduNetdisk",
+    "com.meituan.itakeaway": "美团",
     "com.baidu.netdisk.loginhelper": "BaiduNetdisk Login Helper",
     "com.baidu.netdisk.helper.Plugin": "BaiduNetdisk Helper (Plugin)",
     "com.baidu.netdisk.helper.GPU": "BaiduNetdisk Helper (GPU)",

@@ -23,6 +23,7 @@ const packagenameMap = {
 	"org.mozilla.firefoxdeveloperedition": "在调试",
 	"com.apple.ActivityMonitor": "在和邪恶进程斗智斗勇",
 	"com.github.Electron": "在调试",
+	"com.meituan.itakeaway": "饿了"
 };
 
 const urlMap = {
