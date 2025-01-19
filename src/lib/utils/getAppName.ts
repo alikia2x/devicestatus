@@ -27,7 +27,7 @@ const packageNameMap = {
     "com.baidu.netdisk.helper.Renderer": "BaiduNetdisk Helper (Renderer)",
     "com.baidu.netdisk.helper": "BaiduNetdisk Helper",
     "com.microsoft.VSCode": "Visual Studio Code",
-    "com.github.Electron.helper": "Code Helper (Renderer)",
+    "com.github.Electron": "Electron",
     "com.microsoft.VSCode.helper": "Code Helper",
     "org.kde.kid3": "kid3",
     "org.grunenberg.EasyFind": "EasyFind",

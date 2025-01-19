@@ -22,6 +22,7 @@ const packagenameMap = {
 	"com.apple.iWork.Numbers": "在工作",
 	"org.mozilla.firefoxdeveloperedition": "在调试",
 	"com.apple.ActivityMonitor": "在和邪恶进程斗智斗勇",
+	"com.github.Electron": "在调试",
 };
 
 const urlMap = {
