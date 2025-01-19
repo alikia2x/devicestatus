@@ -39,6 +39,7 @@ const urlMap = {
 			/^www\.csdn\.net/g,
 			/^www\.juejin\.cn/g,
 			/^www\.perplexity\.ai/g,
+			/^github\.com/g,
 		],
 		"blacklist": [
 			/^docs\.(qq|google)\.\w+/,
@@ -79,6 +80,12 @@ const urlMap = {
 		],
 		"blacklist": []
 	},
+	"在工作": {
+		"match": [
+			/^\w*\.?gitee\.com/g
+		],
+		"blacklist": []
+	}
 };
 
 function getURLMatch(url: string) {
